@@ -19,7 +19,6 @@ export default function Home() {
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
               app/page.tsx
             </code>
-            .
           </li>
           <li className="tracking-[-.01em]">
             Save and see your changes instantly.
@@ -50,6 +49,41 @@ export default function Home() {
           >
             Read our docs
           </a>
+        </div>
+        <div className="w-[100%]">
+          <Carousel className=" mt-4">
+            <CarouselContent className="gap-4">
+              <CarouselItem>
+                <Image
+                  src="/images/image.png"
+                  alt="Example 1"
+                  width={400}
+                  height={250}
+                  className="rounded-lg object-cover w-full h-auto"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <Image
+                  src="/images/image.png"
+                  alt="Example 2"
+                  width={400}
+                  height={250}
+                  className="rounded-lg object-cover w-full h-auto"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <Image
+                  src="/images/image.png"
+                  alt="Example 3"
+                  width={400}
+                  height={250}
+                  className="rounded-lg object-cover w-full h-auto"
+                />
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
